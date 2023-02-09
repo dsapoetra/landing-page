@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import Technologies from "./Technologies";
 
 class Resume extends Component {
   getRandomColor() {
@@ -38,19 +39,6 @@ class Resume extends Component {
           </p>
           <p>{work.description}</p>
         </div>
-      );
-    });
-
-    const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
-      const width = skills.level;
-
-      return (
-        <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
       );
     });
 
@@ -94,10 +82,7 @@ class Resume extends Component {
 
             <div className="nine columns main-col">
               <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
+              <Technologies />
             </div>
           </div>
         </Slide>
