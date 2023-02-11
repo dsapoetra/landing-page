@@ -10,6 +10,8 @@ COPY . .
 RUN npm ci 
 # Build the app
 RUN npm run build
+
+RUN npm i serve@14.2.0
 # ==== RUN =======
 # Set the env to "production"
 ENV NODE_ENV production
