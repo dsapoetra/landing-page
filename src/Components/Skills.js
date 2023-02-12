@@ -1,37 +1,31 @@
-import { DiAndroid, DiTerminal } from "react-icons/di";
-import { SiJava, SiFirebase, SiGit } from "react-icons/si";
-import { RiFlutterFill } from "react-icons/ri";
+import { DiJavascript } from "react-icons/di";
+import { SiJava, SiFirebase, SiGit, SiPostgresql } from "react-icons/si";
+import { AiOutlineGoogle } from "react-icons/ai";
 
 export const Skills = [
   {
-    slug: "android",
-    Component: DiAndroid,
-    title: "Android",
-    Description: () => <>I work on ROMs, Kernels & Android Apps using Java.</>,
-  },
-  {
-    slug: "flutter",
-    Component: RiFlutterFill,
-    title: "Flutter",
-    Description: () => <>Currently working with Dart & Flutter for app development. </>,
+    slug: "golang",
+    Component: AiOutlineGoogle,
+    title: "Golang",
+    Description: () => <>I work on several web apps in golang, used it in my backend side projects.</>,
   },
   {
     slug: "java",
     Component: SiJava,
     title: "Java",
-    Description: () => <>I can code in Java. But I mainly use it for Android app development.</>,
+    Description: () => <>I can code in Java. But I mainly use it for some backend development.</>,
   },
   {
-    slug: "terminal",
-    Component: DiTerminal,
-    title: "Scripting",
-    Description: () => <>I have written dozens of Shell scripts for various purposes.</>,
+    slug: "javascript",
+    Component: DiJavascript,
+    title: "Javascript",
+    Description: () => <>I have written frontend with JS mainly reactJS.</>,
   },
   {
-    slug: "firebase",
-    Component: SiFirebase,
-    title: "Firebase",
-    Description: () => <>I have used Firebase for auth, database & analytics in my apps.</>,
+    slug: "postgresql",
+    Component: SiPostgresql,
+    title: "Postgresql",
+    Description: () => <>Although I used mySQL and mariaDB in my previous work, I mainly uses Postgresql .</>,
   },
   {
     slug: "git",

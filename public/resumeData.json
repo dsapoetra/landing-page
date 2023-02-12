@@ -2,7 +2,7 @@
   "main": {
     "name":"Dimas Saputra",
     "description":"Aspiring full stack developer, mainly develop backend with go and frontend with react. Currently an Engineering Manager at Govtech Edu, Indonesia",
-    "image":"1650989051730.jpeg",
+    "image":"profpic.png",
     "bio":"A software engineer currently working as Engineering Manager in Govtech edu, an initiative under ministry of culture and education. My current responsibility is managing and enabling team to develop product. \n Past experiences include revamp and lead core banking integration, develop and maintain transaction flow with some core flow in a payment solution product, developed inventory and internal tools for business team, web-based chat platform, video engagement feature through quizzes, and online-learning web app for K12 student.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "angga.dimassaputra@gmail.com",
@@ -13,38 +13,33 @@
       "city":"Jakarta",
       "state":"DKI Jakarta"
     },
-    "website": "http://www.t.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://www.dsapoetra.com",
+    "resumedownload":"https://drive.google.com/file/d/10BjURQhcuIYK5NxXBoDKk2PpBnr7FGso/view?usp=share_link",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
         "name":"twitter",
-        "url":"http://twitter.com",
+        "url":"http://twitter.com/dsapoetrasmind",
         "className":"fa fa-twitter"
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"http://linkedin.com/in/dimasangga",
         "className":"fa fa-linkedin"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"http://instagram.com/dsapoetra",
         "className":"fa fa-instagram"
       },
       {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/dsapoetra",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Experienced software engineer and software engineering lead/manager",
     "education":[
       {
         "school":"Institut Teknologi Bandung",
@@ -68,55 +63,33 @@
       },
       {
         "company":"Amartha mikro fintek",
-        "title":"Junior bug fixer",
+        "title":"Engineering lead",
         "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Lead team to revamp core banking system in Amartha, coordinate to integrate with third party, hands on coding and debugging, coordinate with PM and other team to unblock engineers, regular code review and solution design/review. Used Golang, Postgresql, SFTP, GCP, AWS, Pubsub"
       },
       {
         "company":"Ndigital/Virgo",
-        "title":"Junior bug fixer",
+        "title":"Backend engineer",
         "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Develop transaction flow of payment solution product, do regular code review for team member, coordinate with partner to integrate capital net's product with partner's product. Used Golang, MariaDB, Apache Fineract, GRPC"
       },
       {
         "company":"Tiket.com",
-        "title":"Junior bug fixer",
+        "title":"Senior backend engineer",
         "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Maintain hotel inventory data, clean and prepare hotel inventory data for other team to use, define new data structure to be consumed by other team, create internal tools for business team to maintain inventory hotel, do regular code review for team member, integrate data with new partner and vendor. Used Java, Spring boot, MongoDB, Apache Kafka, Google cloud pubsub"
       },
       {
         "company":"Blackberry messenger",
-        "title":"Junior bug fixer",
+        "title":"Software engineer",
         "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Handled BBM Desktop with responsibilities ranging from Front-end, Back-end, Mobile(Android), and Infrastructure. Handled Group-War which is quiz through chat platform with responsibilities ranging from Front-end, Back-end, and a bit Infrastructure. Handled quiz feature on Vidio.com which was a new feature, with responsibilities ranging from Front-end, Back-end, and a bit Infrastructure. Both practicing agile and TDD. Used C++ , Javascript(React), Java, Kotlin, Redux, Ruby on Rails, PostgreSQL"
       },
       {
         "company":"Zenius Education",
         "title":"Junior bug fixer",
         "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ],
-    "skills":[
-      {
-        "name":"Python"      },
-      {
-        "name":"VueJs"
-      },
-      {
-        "name":"ReactJs"
-      },
-      {
-        "name":"CSS"
-      },
-      {
-        "name":"PHP"
-      },
-      {
-        "name":"Swift"
-      },
-      {
-        "name":"JAVA"
+        "description":"Make sure new idea (system, workflow, product) executed well into working app, content (problem generator) development, Zenius prestasi frontend development, demo zenius prestasi deployment & maintenance, incentive (zenius.net data) analysis, experiment on new technology. Used Clojure, ClojureScript, Material-UI, Datomic"
       }
     ]
   },
