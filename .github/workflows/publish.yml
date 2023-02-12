@@ -9,28 +9,19 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2 # Checking out the repo
-
-    - name: Build and Publish head Docker image
-      uses: DrSkunk/gp-docker-action@1.1.9
-      with:
-        github-token: ${{ secrets.TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
-        image-name: landing-page # Provide Docker image name
-        image-tag: latest # Provide Docker image tag
-    # steps:
-    #   - name: Checkout Code
-    #     uses: actions/checkout@v1
-    #   - name: Login to GitHub Container Registry
-    #     uses: docker/login-action@v1
-    #     with:
-    #       registry: ghcr.io
-    #       username: ${{ github.actor }}
-    #       password: ${{ secrets.TOKEN }}
-    #   - name: Build and Push Docker Image
-    #     uses: docker/build-push-action@v2
-    #     with:
-    #       tags: |
-    #         ghcr.io/${{ github.repository }}:latest
+      - name: Checkout Code
+        uses: actions/checkout@v1
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.TOKEN }}
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v2
+        with:
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
       # - name: Deploy NodeJS app
       #   uses: appleboy/ssh-action@v0.1.2
       #   with:
