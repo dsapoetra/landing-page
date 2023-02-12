@@ -25,7 +25,7 @@ jobs:
             ghcr.io/${{ github.repository }}:latest
       - name: GitHub Action for DigitalOcean - doctl
         uses: digitalocean/action-doctl@v2.3.0
-    - name: Deploy NodeJS app
+      - name: Deploy NodeJS app
         uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.SSH_HOST}} # IP address of the server you wish to ssh into
