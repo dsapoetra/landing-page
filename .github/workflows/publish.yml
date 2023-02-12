@@ -18,12 +18,12 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
       - name: Build and Push Docker Image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           tags: |
             ghcr.io/${{ github.repository }}:latest
       - name: Deploy NodeJS app
-        uses: appleboy/ssh-action@v0.1.2
+        uses: appleboy/ssh-action@v0.1.4
         with:
           host: ${{secrets.SSH_HOST}} # IP address of the server you wish to ssh into
           key: ${{secrets.SSH_KEY}} # Private or public key of the server
