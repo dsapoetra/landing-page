@@ -20,11 +20,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          push: true # Will only build if this is not here
           tags: |
             ghcr.io/${{ github.repository }}:latest
-      - name: GitHub Action for DigitalOcean - doctl
-        uses: digitalocean/action-doctl@v2.3.0
       - name: Deploy NodeJS app
         uses: appleboy/ssh-action@v0.1.2
         with:
