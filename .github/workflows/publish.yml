@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           tags: |
-            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:bukan-latest
       # - name: Deploy NodeJS app
       #   uses: appleboy/ssh-action@v0.1.4
       #   with:
