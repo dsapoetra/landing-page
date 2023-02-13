@@ -17,11 +17,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
-      - name: Build and Push Docker Image
-        uses: docker/build-push-action@v3
-        with:
-          tags: |
-            ghcr.io/${{ github.repository }}:bukan-latest
+      - name: Run script file
+        run: |
+          docker build -t ghcr.io/dsapoetra/landing-page:bukan-latest .
+          docker push ghcr.io/dsapoetra/landing-page:bukan-latest
       # - name: Deploy NodeJS app
       #   uses: appleboy/ssh-action@v0.1.4
       #   with:
